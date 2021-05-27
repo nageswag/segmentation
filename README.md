@@ -1,4 +1,5 @@
 # Image segmentation
+
 Includes quick prototype code for performing various methods of image segmentation. Most of the code adapted from different sources from the 'internet'. So there is nothing fancy about this repo itself! ;-)
 
 Code tested on python3 on Ubuntu 18.04. Dependencies are to be found in 'requirements.txt' which should ideally be installed using 
