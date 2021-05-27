@@ -1,0 +1,11 @@
+numpy
+h5py
+sklearn
+PIL
+scipy
+scikit-image
+keras>=2.3.0
+tensorflow>=2.2
+opencv-python
+pywt
+
