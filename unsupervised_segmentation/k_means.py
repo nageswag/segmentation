@@ -7,10 +7,10 @@ import cv2
 import png
 from sklearn.cluster import KMeans
 
-gt_pic = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
-#gt_pic = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/gt/gtFine/train/stuttgart/stuttgart_000059_000019_gtFine_color.png')
+gt_pic = plt.imread('/home/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
+#gt_pic = plt.imread('/home/workspace/assignment/dataset/cityscapes/gt/gtFine/train/stuttgart/stuttgart_000059_000019_gtFine_color.png')
 print(gt_pic.shape)
-pic = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')/255  # dividing by 255 to bring the pixel values between 0 and 1
+pic = plt.imread('/home/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')/255  # dividing by 255 to bring the pixel values between 0 and 1
 print(pic.shape)
 
 # reshape test image
