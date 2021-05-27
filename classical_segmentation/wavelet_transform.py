@@ -6,7 +6,7 @@ import pywt
 import pywt.data
 
 
-image = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')
+image = plt.imread('/home/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')
 # Load image
 Y = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 M, N = Y.shape
