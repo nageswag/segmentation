@@ -8,7 +8,7 @@ pip install -r requirements.txt
 If you have messed up system installations between python2 and python3, try to use the version exclusively, like pip3. If still something does not work, manual installation of the packages would be a saver!
 
 *Not in this repo*
-- All the scripts in this repo have been trained/tested with the Cityscapes dataset. The dataset is huge and it is not even clear if the license allows uploading it to unrestricted repo. So, one can download it from here after registration: https://www.cityscapes-dataset.com/ (Don't forget to grab a lunch pr take a nap after pressing *download dataset*)
+- All the scripts in this repo have been trained/tested with the Cityscapes dataset. The dataset is huge and it is not even clear if the license allows uploading it to unrestricted repo. So, one can download it from here after registration: https://www.cityscapes-dataset.com/ (Don't forget to grab a lunch or take a nap after pressing *download dataset*)
 - The model weights are heavy-weight, so not uploaded. So to get the weights, the networks have to be trained locally on your machine (and ofcourse grab another meal, a KFC bucket sort of thing ;-)).
 - Weights for the pre-trained VGG16 encoder can be downloaded from [here](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
 
@@ -27,18 +27,18 @@ python3 k_means.py
 ## Supervised segmentation
 The base for the supervised segmentation is copied (why re-invent the wheel, huh?) from this [repo](https://github.com/dhkim0225/keras-image-segmentation.git). Basically contains three different network architectures - **FCN**, **U-Net** and **PSPNet**. However, the scripts needed some adaptation to get them running, especially training and testing. I have additionally added a script containing the evaluation metrics: *dice coefficient*, *jaccard index* and *pixel accuracy*.
 
-*Preparing Cityscapes data*
+*Preparing Cityscapes data* <br/>
 ```
 python3 dataset_parser/make_h5.py --path "/downloaded/leftImg8bit/path/" --gtpath "/downloaded/gtFine/path/"
 ```
 
-*Training the model*
+*Training the model* <br/>
 Only 3 classes (person, car, road) and the background are considered. As described in the original repo, the training of a model foo can be done using
 ```
 python3 train.py --model foo --vgg /path/of/pretrained_vgg_weights
 ```
 
-*Testing the trained models*
+*Testing the trained models* <br/>
 The output of the models can typically be tested using test images from the dataset, which needs to be mentioned within the test script.
 ```
  python3 test.py --model foo
