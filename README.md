@@ -25,10 +25,36 @@ python3 k_means.py
 ```
 
 ## Supervised segmentation
-The base for the supervised segmentation is copied (why re-invent the wheel, huh?) from here: https://github.com/dhkim0225/keras-image-segmentation.git. Basically contains three different network architectures - **FCN**, **U-Net** and **PSPNet**. However, the scripts needed some adaptation to get them running, especially training and testing. I have additionally added a script containing the evaluation metrics: *dice coefficient*, *jaccard index* and *pixel accuracy*.
+The base for the supervised segmentation is copied (why re-invent the wheel, huh?) from this [repo](https://github.com/dhkim0225/keras-image-segmentation.git). Basically contains three different network architectures - **FCN**, **U-Net** and **PSPNet**. However, the scripts needed some adaptation to get them running, especially training and testing. I have additionally added a script containing the evaluation metrics: *dice coefficient*, *jaccard index* and *pixel accuracy*.
+
+*Preparing Cityscapes data*
+```
+python3 dataset_parser/make_h5.py --path "/downloaded/leftImg8bit/path/" --gtpath "/downloaded/gtFine/path/"
+```
 
 *Training the model*
-As described in the original repo, the training can be done using
+Only 3 classes (person, car, road) and the background are considered. As described in the original repo, the training of a model foo can be done using
+```
+python3 train.py --model foo --vgg /path/of/pretrained_vgg_weights
 ```
 
+*Testing the trained models*
+The output of the models can typically be tested using test images from the dataset, which needs to be mentioned within the test script.
 ```
+ python3 test.py --model foo
+ ```
+ The test scripts masks the images (onyl for the considered classes) and also computes the above mentioned metrics, for the overall as well as class wise instances.
+ 
+ ### Example results
+ *Test image: frankfurt_000001_054219*
+ ![alt text]()
+ 
+ *Segmented image from fcn*
+ ![alt text]()
+ 
+ *Segmented image from u-net*
+ ![alt text]()
+ 
+ *Segmented image from pspnet*
+ ![alt text]()
+ 
