@@ -46,15 +46,16 @@ The output of the models can typically be tested using test images from the data
  The test scripts masks the images (onyl for the considered classes) and also computes the above mentioned metrics, for the overall as well as class wise instances.
  
  ### Example results
- *Test image: frankfurt_000001_054219*
- ![alt text]()
+ Coarse results based on just 3 epochs for each: <br/>
+ *Test image: frankfurt_000001_054219* <br/>
+ ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_test_image.png)
  
- *Segmented image from fcn*
- ![alt text]()
+ *Segmented image from fcn* <br/>
+ ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_fcn_res_color.png)
  
- *Segmented image from u-net*
- ![alt text]()
+ *Segmented image from u-net* <br/>
+ ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_unet_res_color.png)
  
- *Segmented image from pspnet*
- ![alt text]()
+ *Segmented image from pspnet* <br/>
+ ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_pspnet_res_color.png)
  
