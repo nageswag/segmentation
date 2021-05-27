@@ -29,4 +29,4 @@ for i, a in enumerate([LL, LH, HL, HH]):
 
 fig.tight_layout()
 plt.show()
-plt.savefig('/home/nga2abt/workspace/assignment/classical_segmentation/wavelet_out.png')
+plt.savefig('/home/workspace/assignment/classical_segmentation/wavelet_out.png')
