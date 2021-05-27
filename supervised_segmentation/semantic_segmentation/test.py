@@ -133,7 +133,7 @@ cv2.imshow('x_img', x_img)
 cv2.imwrite('frankfurt_000001_054219_test_image.png', x_img)
 
 # reshape gt image for evaluation
-gt = cv2.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
+gt = cv2.imread('/home/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
 r = 256.0 / x_img.shape[0]
 dim = (int(x_img.shape[1] * r), 256)
 gt_image = cv2.resize(gt, dim, interpolation = cv2.INTER_NEAREST)
