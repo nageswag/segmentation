@@ -6,9 +6,9 @@ import png
 import matplotlib.pyplot as plt
 from scipy import ndimage
 
-gt_image = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
+gt_image = plt.imread('/home/workspace/assignment/dataset/cityscapes/gt/gtFine/val/frankfurt/frankfurt_000001_054219_gtFine_labelIds.png')
 print("gt image", gt_image.shape)
-image = plt.imread('/home/nga2abt/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')
+image = plt.imread('/home/workspace/assignment/dataset/cityscapes/trainValTest/leftImg8bit/val/frankfurt/frankfurt_000001_054219_leftImg8bit.png')
 plt.imshow(image)
 
 # converting to grayscale
@@ -30,4 +30,4 @@ ax2 = fig.add_subplot(122)
 ax2.imshow(LoG_result, cmap='gray')
 
 plt.show()
-plt.savefig('/home/nga2abt/workspace/assignment/classical_segmentation/laplace_out.png')
+plt.savefig('/home/workspace/assignment/classical_segmentation/laplace_out.png')
