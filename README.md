@@ -46,7 +46,7 @@ The output of the models can typically be tested using test images from the data
  The test scripts masks the images (onyl for the considered classes) and also computes the above mentioned metrics, for the overall as well as class wise instances.
  
  ### Example results
- Coarse results based on just 3 epochs for each: <br/>
+ Coarse results based on just 3 epochs for each model (higher iterations would ofcourse yield better results) <br/>
  *Test image: frankfurt_000001_054219* <br/>
  ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_test_image.png)
  
