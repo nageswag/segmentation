@@ -18,6 +18,7 @@ If you have messed up system installations between python2 and python3, try to u
 Contains Laplacian operator and Laplacian of Gaussian implementations
 ```
 python3 laplace_operator.py
+python3 wavelet_transform.py
 ```
 
 ## Unsupervised segmentation
