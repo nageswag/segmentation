@@ -15,7 +15,7 @@ If you have messed up system installations between python2 and python3, try to u
 - Weights for the pre-trained VGG16 encoder can be downloaded from [here](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
 
 ## Classical segmentation
-Contains Laplacian operator and Laplacian of Gaussian implementations
+Contains Laplacian operator, Laplacian of Gaussian and wavelet transform implementations
 ```
 python3 laplace_operator.py
 python3 wavelet_transform.py
