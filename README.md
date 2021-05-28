@@ -7,11 +7,11 @@ Dependencies are to be found in 'requirements.txt' which should ideally be insta
 ```
 pip install -r requirements.txt
 ```
-If you have messed up system installations between python2 and python3, try to use the version exclusively, like pip3. If still something does not work, manual installation of the packages would be a saver!
+If you have messed up system installations between python2 and python3, try to use the version exclusively, like pip3. If still something does not work, manual installation of the packages would be a saver! Best would be to run it in virtual environment (however, a Pipfile needs to be created for dependencies).
 
 *Not in this repo*
-- All the scripts in this repo have been trained/tested with the Cityscapes dataset. The dataset is huge and it is not even clear if the license allows uploading it to unrestricted repo. So, one can download it from here after registration: https://www.cityscapes-dataset.com/ (Don't forget to grab a lunch or take a nap after pressing *download dataset*)
-- The model weights are heavy-weight, so not uploaded. So to get the weights, the networks have to be trained locally on your machine (and ofcourse grab another meal, a KFC bucket sort of thing ;-)).
+- All the scripts in this repo have been trained/tested with the Cityscapes dataset. The dataset is huge and it is not even clear if the license allows uploading it to unrestricted repo. So, one can download it from here after registration: https://www.cityscapes-dataset.com/ (Feel free to grab a lunch or take a nap after pressing *download dataset*)
+- The model weights are heavy-weight, so not uploaded. So to get the weights, the networks have to be trained locally on your machine (and of course grab another meal, a KFC bucket sort of thing ;-)).
 - Weights for the pre-trained VGG16 encoder can be downloaded from [here](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
 
 ## Classical segmentation
@@ -45,7 +45,7 @@ The output of the models can typically be tested using test images from the data
 ```
  python3 test.py --model foo
  ```
- The test scripts masks the images (onyl for the considered classes) and also computes the above mentioned metrics, for the overall as well as class wise instances.
+ The test script masks the images (only for the considered classes) and also computes the above mentioned metrics, for the overall as well as class wise instances.
  
  ### Example results
  Coarse results based on just 3 epochs for each model (higher iterations would ofcourse yield better results) <br/>
