@@ -52,6 +52,9 @@ The output of the models can typically be tested using test images from the data
  *Test image: frankfurt_000001_054219* <br/>
  ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_test_image.png)
  
+  *Masked ground truth instances* <br/>
+ ![](https://github.com/nageswag/segmentation/blob/main/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_gt_color.png)
+ 
  *Segmented image from fcn* <br/>
  ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_fcn_res_color.png)
  
