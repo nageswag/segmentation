@@ -61,4 +61,4 @@ The output of the models can typically be tested using test images from the data
  *Segmented image from pspnet* <br/>
  ![](https://github.com/nageswag/segmentation/blob/feature/collective-code-for-segmentation-and-friends/supervised_segmentation/semantic_segmentation/supervised_seg_results/frankfurt_000001_054219_pspnet_res_color.png)
  
-On a whole, the fcn seems to have a better performance, at least with respect to the borders. Hoever, U-net performs well especially for the pedestrians.
+On a whole, the fcn seems to have a better performance, at least with respect to the borders. However, U-net performs well especially for the pedestrians.
